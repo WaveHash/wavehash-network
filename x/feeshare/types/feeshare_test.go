@@ -96,7 +96,7 @@ func (suite *FeeShareTestSuite) TestFee() {
 			"Create feeshare- invalid deployer address",
 			FeeShare{
 				suite.contract.String(),
-				"wavehash1hj5fveer5cjtn4wd6wstzugjfdxzl0xps73ftl",
+				"wavehash18ak4mdzl8cj0rlczdhrctryrjq52gvqucven28",
 				suite.address2.String(),
 			},
 			false,
@@ -106,7 +106,7 @@ func (suite *FeeShareTestSuite) TestFee() {
 			FeeShare{
 				suite.contract.String(),
 				suite.address1.String(),
-				"wavehash1hj5fveer5cjtn4wd6wstzugjfdxzl0xps73ftl",
+				"wavehash18ak4mdzl8cj0rlczdhrctryrjq52gvqucven28",
 			},
 			false,
 		},

@@ -47,7 +47,7 @@ func ConvertBech32Cmd() *cobra.Command {
 		Long: `Convert any bech32 string to the wavehash prefix
 Especially useful for converting cosmos addresses to wavehash addresses
 Example:
-	wavehashd bech32-convert wavehash1ey69r37gfxvxg62sh4r0ktpuc46pzjrm5cxnjg -p osmo
+	wavehashd bech32-convert wavehash18ak4mdzl8cj0rlczdhrctryrjq52gvqucven28 -p osmo
 	`,
 		Args: cobra.ExactArgs(1),
 		RunE: func(cmd *cobra.Command, args []string) error {

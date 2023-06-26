@@ -59,17 +59,17 @@ read -p "Press enter to continue after you start the relayer with the above cont
 # send 10 token via ibc transfer
 
 # We send to the same account on the 2nd chain
-TRANSFER_MSG=`printf '{"channel":"channel-0","remote_address":"wavehash1efd63aw40lxf3n4mhf7dzhjkr453axurv2zdzk","timeout":100}' | base64 -w 0`
+TRANSFER_MSG=`printf '{"channel":"channel-0","remote_address":"wavehash18ak4mdzl8cj0rlczdhrctryrjq52gvqucven28","timeout":100}' | base64 -w 0`
 MSG=`printf '{"send":{"contract":"%s","amount":"10","msg":"%s"}}' $ICS20_CONTRACT $TRANSFER_MSG`
 # send the Tx
 wavehashd tx wasm execute $CW20_CONTRACT $MSG --gas-prices="0.03uwaha" --gas 5000000 -y -b block --node http://localhost:26657 --output json --keyring-backend test --chain-id local-1 --from wavehash1
 
 sleep 6
 
-wavehashd query wasm contract-state smart "$CW20_CONTRACT" '{"balance":{"address":"wavehash1hj5fveer5cjtn4wd6wstzugjfdxzl0xps73ftl"}}' --output json --node http://localhost:26657
+wavehashd query wasm contract-state smart "$CW20_CONTRACT" '{"balance":{"address":"wavehash18ak4mdzl8cj0rlczdhrctryrjq52gvqucven28"}}' --output json --node http://localhost:26657
 
 wavehashd q ibc-transfer denom-traces --node http://localhost:36657
 
 
 # Has a new IBC token denom which is the transfered one
-wavehashd q bank balances wavehash1efd63aw40lxf3n4mhf7dzhjkr453axurv2zdzk --node http://localhost:36657
+wavehashd q bank balances wavehash18ak4mdzl8cj0rlczdhrctryrjq52gvqucven28 --node http://localhost:36657

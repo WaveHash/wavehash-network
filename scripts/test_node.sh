@@ -46,9 +46,9 @@ from_scratch () {
   rm -rf $HOME_DIR && echo "Removed $HOME_DIR"  
   
   # wavehash1efd63aw40lxf3n4mhf7dzhjkr453axurv2zdzk
-  echo "decorate bright ozone fork gallery riot bus exhaust worth way bone indoor calm squirrel merry zero scheme cotton until shop any excess stage laundry" | BINARY keys add $KEY --keyring-backend $KEYRING --algo $KEYALGO --recover
+  echo "obey march panther plate kind fade coyote promote cover trial fire portion foot auto purchase cannon group icon winter surge inch catch famous riot" | BINARY keys add $KEY --keyring-backend $KEYRING --algo $KEYALGO --recover
   # wavehash1hj5fveer5cjtn4wd6wstzugjfdxzl0xps73ftl
-  echo "wealth flavor believe regret funny network recall kiss grape useless pepper cram hint member few certain unveil rather brick bargain curious require crowd raise" | BINARY keys add feeacc --keyring-backend $KEYRING --algo $KEYALGO --recover
+  echo "sing define eyebrow rent bind quiz critic snake unit possible misery rich dial jazz grunt coral suffer piece tennis rubber blame banner motion paper" | BINARY keys add feeacc --keyring-backend $KEYRING --algo $KEYALGO --recover
   
   BINARY init $MONIKER --chain-id $CHAIN_ID
 

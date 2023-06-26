@@ -6,7 +6,7 @@ services:
       context: .
       args:
         - arch=${ARCH:-x86_64}
-    command: ./setup_and_run.sh wavehash16g2rahf5846rxzp3fwlswy08fz8ccuwk03k57y
+    command: ./setup_and_run.sh wavehash18ak4mdzl8cj0rlczdhrctryrjq52gvqucven28
     ports:
       - 1317:1317 # rest
       - 26656:26656 # p2p

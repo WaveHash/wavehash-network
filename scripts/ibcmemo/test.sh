@@ -25,7 +25,7 @@ balance=$(wavehashd query bank balances "$CONTRACT_ADDRESS" --node http://localh
 echo "denom: $denom"
 echo "balance: $balance"
 
-export ADDR_IN_CHAIN_A=$(wavehashd q ibchooks wasm-sender channel-0 "wavehash1hj5fveer5cjtn4wd6wstzugjfdxzl0xps73ftl" --node http://localhost:26657)
+export ADDR_IN_CHAIN_A=$(wavehashd q ibchooks wasm-sender channel-0 "wavehash18ak4mdzl8cj0rlczdhrctryrjq52gvqucven28" --node http://localhost:26657)
 
 # Total Funds
 QUERY=$(jenv -c -r '{"get_total_funds": {"addr": $ADDR_IN_CHAIN_A}}')

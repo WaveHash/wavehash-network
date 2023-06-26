@@ -1,4 +1,4 @@
-package v6
+package v1
 
 import (
 	"github.com/WaveHashProtocol/wavehash/v6/app/upgrades"
